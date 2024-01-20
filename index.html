@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Free-Aqua</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/1a8cc4f4cb.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/logo.png" class="logo">
+            <ul>
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="header-text">
+            <p>FREE AQUA</p>
+            <h1>Sip & smile.<br> It's free!</h1>
+        </div>
+    </div>
+</div>
+<!------about-------->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.jpg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Us</h1>
+                <p>We're redefining advertising by using water bottles as a unique platform for brands while supporting social causes. Our model utilizes premium spring water in recycled bottles, with a portion of proceeds donated to charity. Join us in reducing plastic waste, providing clean water, and promoting conscious consumerism. Sponsorship opportunities available.</p>
+            
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Partners</p>
+                    <p class="tab-links" onclick="opentab('experience')">Impact/Goals</p>
+                    <p class="tab-links" onclick="opentab('education')">Minerals</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>* DSE</span></li>
+                        <li><span>* ORIC</span></li>
+                        <li><span>* Department of Management Sciences  </span></li>
+                        <li><span>* Bottling company </span></li>
+                    </ul>
+                </div>
+            <div class="tab-contents" id="experience">
+                <ul>
+                    <li><span>1.</span><br>Increase access to clean water for communities in need.</li>
+                    <li><span>2.</span><br>Reduce plastic waste through responsible sourcing and recycling.</li>
+                    <li><span>3.</span><br> Create a culture of conscious consumer choices and philanthropy.</li>
+                    <li><span>4.</span><br>Foster partnerships with businesses committed to social & environmental responsibility</li>
+                    
+                </ul>
+            </div>
+            <div class="tab-contents" id="education">
+                <ul>
+                    <li><span>Magnesium</span><br>05-30 mg/L</li>
+                    <li><span>Sodium</span><br>10-50 mg/L</li>
+                    <li><span>Sulphate</span><br>10-30 mg/L</li>
+                    <li><span>Calcium</span><br>30-120 mg/L</li>
+                    <li><span>Potassium</span><br>0.02-5 mg/L</li>
+                    <li><span>Chloride</span><br>5-140 mg/L</li>
+                    <li><span>pH</span><br>6.5-8.5</li>
+                        
+                </ul>
+            </div>
+        </div>
+    </div>
+</div>
+<!-------Contact--------->
+<div id="contact">
+    <div class="container">
+      <div class="row">
+        <div class="contact-left">
+            <h1 class="sub-title"> Contact.</h1>
+            <p><i class="fa-solid fa-paper-plane"></i> dr.ansir.rajput@gmail.com </p>
+            <p><i class="fa-solid fa-square-phone"></i> +923005695999</p>
+            <p> </p>
+            <div class="social-icons">
+                <a href="https://www.instagram.com/free__aqua/"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
+      </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Free Aqua.</p>
+    </div>
+</div>        
+<script>
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+        tablink.classList.remove("active-link");}
+    
+        for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");}
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+</body>
+</html>
